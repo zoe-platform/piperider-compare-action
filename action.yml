@@ -77,7 +77,7 @@ runs:
         select: ${{ inputs.select }}
         skip_datasource: ${{ inputs.skip_datasource }}
     - name: Upload Generated Report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: github.event_name == 'pull_request'
       with:
         name: reports
